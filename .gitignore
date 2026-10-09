@@ -1,0 +1,10 @@
+data/
+.venv/
+__pycache__/
+.pytest_cache/
+*.db*
+
+# Assignment brief (local copy, not part of the submission)
+*.docx
+.env
+.deepeval/

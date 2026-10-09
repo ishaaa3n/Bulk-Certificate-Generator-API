@@ -1,0 +1,35 @@
+# API and workers are separate, independently scalable services sharing Postgres + a storage volume.
+#   docker compose up --build --scale worker=3
+x-env: &env
+  CERTGEN_DATABASE_URL: postgresql+psycopg2://certgen:certgen@db:5432/certgen
+  CERTGEN_STORAGE_DIR: /data/certificates
+  CERTGEN_WORKER_MODE: external
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment: {POSTGRES_USER: certgen, POSTGRES_PASSWORD: certgen, POSTGRES_DB: certgen}
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U certgen"]
+      interval: 3s
+      retries: 20
+
+  api:
+    build: .
+    environment: *env
+    ports: ["8000:8000"]
+    volumes: [certs:/data]
+    depends_on: {db: {condition: service_healthy}}
+
+  worker:
+    build: .
+    command: ["python", "-m", "app.worker_main"]
+    environment: *env
+    volumes: [certs:/data]
+    depends_on: {db: {condition: service_healthy}}
+    stop_grace_period: 40s   # lets a worker finish its current certificate and release its job on SIGTERM
+
+volumes:
+  pgdata:
+  certs:
