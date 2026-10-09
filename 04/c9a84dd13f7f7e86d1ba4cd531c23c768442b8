@@ -1,0 +1,228 @@
+app/service.py
+  s_b9f5c16ee53041::t_978dddf3949e33 1-172,175-236
+  s_b9f5c16ee53041::t_95006ce550781d 173-174
+app/schemas.py
+  s_b9f5c16ee53041::t_389f790b055e0a 1-70
+tests/test_resilience.py
+  s_b9f5c16ee53041::t_93f57490f602a3 16,34,48-49,55
+  s_b9f5c16ee53041::t_03e04991d0dad1 1-15,17-33,35-47,50-54,56-131
+app/models.py
+  s_b9f5c16ee53041::t_a53305f5ca26c0 1-84
+tests/test_workers.py
+  s_b9f5c16ee53041::t_93f57490f602a3 14,23
+  s_b9f5c16ee53041::t_f57874902e098b 1-13,15-22,24-132,134-153,155-230
+  s_b9f5c16ee53041::t_bcb28a399fbc84 133,154,231-354
+.dockerignore
+  s_b9f5c16ee53041::t_25a113623c0155 1-6
+tests/test_api.py
+  s_b9f5c16ee53041::t_93f57490f602a3 1-327
+app/storage.py
+  s_b9f5c16ee53041::t_aad898c1ac40e8 1-42
+app/config.py
+  s_b9f5c16ee53041::t_4698091250efca 2-26
+app/database.py
+  s_b9f5c16ee53041::t_d70bde1b68a2ad 1-37
+app/api.py
+  s_b9f5c16ee53041::t_544dbe41bad751 1-118
+app/main.py
+  s_b9f5c16ee53041::t_88533a2600cf59 1-78
+app/worker.py
+  s_b9f5c16ee53041::t_1330710febe53e 22,39-42,60,67,79,85,93-96,98-99,101,105-118,130-132,155-156,158,161,165,167-171,178,184-185,187,189-190,193-194,196-197
+  s_b9f5c16ee53041::t_978dddf3949e33 1-21,23-38,43-59,61-66,68-78,80-84,86-92,97,100,102-104,119-129,133-154,157,159-160,162-164,166,172-177,179-183,186,188,191-192,195,198-270
+docker-compose.yml
+  s_b9f5c16ee53041::t_25a113623c0155 1-35
+README.md
+  s_b9f5c16ee53041::t_011793583e50e5 41,171,173-184,193-194
+  s_b9f5c16ee53041::t_bcb28a399fbc84 3-4,6,8-33,37,39-40,44,47,50-51,53-54,60,62-63,65-66,69-78,83-94,98-170,172,185-192,195-208
+requirements.txt
+  s_b9f5c16ee53041::t_25a113623c0155 1-11
+app/errors.py
+  s_b9f5c16ee53041::t_b9e4f85cc3bf43 1-28
+.gitignore
+  s_b9f5c16ee53041::t_216dcf66611252 1-10
+app/worker_main.py
+  s_b9f5c16ee53041::t_8c647e3daeef92 1-34
+app/generator.py
+  s_b9f5c16ee53041::t_1330710febe53e 1-91
+tests/conftest.py
+  s_b9f5c16ee53041::t_93f57490f602a3 1-69
+Dockerfile
+  s_b9f5c16ee53041::t_25a113623c0155 1-10
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "autter_version": "2.0.0",
+  "base_commit_sha": "04c9a84dd13f7f7e86d1ba4cd531c23c768442b8",
+  "branch": "main",
+  "prompts": {
+    "s_b9f5c16ee53041": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "59b6c4d3-2413-417c-a4b5-0aaa8a5cf869",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "ishan <ishandesale2004@gmail.com>",
+      "messages_url": "cas:edd1783497ae09cbcf86dd12b74f9a0f038d0fb68da3b7bfe436c5cf415a2e56",
+      "total_additions": 2247,
+      "total_deletions": 452,
+      "accepted_lines": 2253,
+      "overriden_lines": 0
+    }
+  },
+  "humans": {
+    "h_9e80cd66c71fee": {
+      "author": "ishan <ishandesale2004@gmail.com>"
+    }
+  },
+  "sessions": {
+    "s_b9f5c16ee53041": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "59b6c4d3-2413-417c-a4b5-0aaa8a5cf869",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "ishan <ishandesale2004@gmail.com>",
+      "messages_url": "cas:edd1783497ae09cbcf86dd12b74f9a0f038d0fb68da3b7bfe436c5cf415a2e56",
+      "stats": {
+        "total_additions": 2247,
+        "total_deletions": 452,
+        "accepted_lines": 2253,
+        "overriden_lines": 0,
+        "files": {
+          ".dockerignore": {
+            "total_additions": 6,
+            "total_deletions": 0,
+            "accepted_lines": 6,
+            "overriden_lines": 0
+          },
+          ".gitignore": {
+            "total_additions": 10,
+            "total_deletions": 0,
+            "accepted_lines": 10,
+            "overriden_lines": 0
+          },
+          "Dockerfile": {
+            "total_additions": 10,
+            "total_deletions": 0,
+            "accepted_lines": 10,
+            "overriden_lines": 0
+          },
+          "README.md": {
+            "total_additions": 239,
+            "total_deletions": 173,
+            "accepted_lines": 208,
+            "overriden_lines": 0
+          },
+          "app/api.py": {
+            "total_additions": 118,
+            "total_deletions": 0,
+            "accepted_lines": 118,
+            "overriden_lines": 0
+          },
+          "app/config.py": {
+            "total_additions": 13,
+            "total_deletions": 1,
+            "accepted_lines": 13,
+            "overriden_lines": 0
+          },
+          "app/database.py": {
+            "total_additions": 28,
+            "total_deletions": 4,
+            "accepted_lines": 28,
+            "overriden_lines": 0
+          },
+          "app/errors.py": {
+            "total_additions": 28,
+            "total_deletions": 0,
+            "accepted_lines": 28,
+            "overriden_lines": 0
+          },
+          "app/generator.py": {
+            "total_additions": 91,
+            "total_deletions": 0,
+            "accepted_lines": 91,
+            "overriden_lines": 0
+          },
+          "app/main.py": {
+            "total_additions": 53,
+            "total_deletions": 149,
+            "accepted_lines": 78,
+            "overriden_lines": 0
+          },
+          "app/models.py": {
+            "total_additions": 84,
+            "total_deletions": 0,
+            "accepted_lines": 84,
+            "overriden_lines": 0
+          },
+          "app/schemas.py": {
+            "total_additions": 70,
+            "total_deletions": 0,
+            "accepted_lines": 70,
+            "overriden_lines": 0
+          },
+          "app/service.py": {
+            "total_additions": 236,
+            "total_deletions": 0,
+            "accepted_lines": 236,
+            "overriden_lines": 0
+          },
+          "app/storage.py": {
+            "total_additions": 42,
+            "total_deletions": 0,
+            "accepted_lines": 42,
+            "overriden_lines": 0
+          },
+          "app/worker.py": {
+            "total_additions": 242,
+            "total_deletions": 109,
+            "accepted_lines": 270,
+            "overriden_lines": 0
+          },
+          "app/worker_main.py": {
+            "total_additions": 34,
+            "total_deletions": 0,
+            "accepted_lines": 34,
+            "overriden_lines": 0
+          },
+          "docker-compose.yml": {
+            "total_additions": 35,
+            "total_deletions": 0,
+            "accepted_lines": 35,
+            "overriden_lines": 0
+          },
+          "requirements.txt": {
+            "total_additions": 11,
+            "total_deletions": 0,
+            "accepted_lines": 11,
+            "overriden_lines": 0
+          },
+          "tests/conftest.py": {
+            "total_additions": 69,
+            "total_deletions": 0,
+            "accepted_lines": 69,
+            "overriden_lines": 0
+          },
+          "tests/test_api.py": {
+            "total_additions": 327,
+            "total_deletions": 0,
+            "accepted_lines": 327,
+            "overriden_lines": 0
+          },
+          "tests/test_resilience.py": {
+            "total_additions": 142,
+            "total_deletions": 11,
+            "accepted_lines": 131,
+            "overriden_lines": 0
+          },
+          "tests/test_workers.py": {
+            "total_additions": 359,
+            "total_deletions": 5,
+            "accepted_lines": 354,
+            "overriden_lines": 0
+          }
+        }
+      }
+    }
+  }
+}
